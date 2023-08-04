@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    height: 78px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width:1201px) {
+      width: 1140px;
+    }
+
+    @media (min-width:951px) and (max-width:1200px) {
+      min-width: 900px;
+    }
+    @media (max-width:950px){
+      width:calc( 100% - 40px)
+    }
+
+    .logo-group {
+      display: flex;
+      margin-right: 20px;
+
+      .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4px;
+        margin: 0 10px 0 0;
+
+        .duong-ke-ngang {
+          width: 22px;
+          height: 3px;
+          background-color: #969495;
+          margin-bottom: 4px;
+        }
+      }
+
+      .logo {
+        max-height: 50px;
+        width: 160px;
+      }
+    }
+
+    .mid-group {
+      display: flex;
+
+      @media (max-width:950px) {
+        display: none;
+
+      }
+
+      .md {
+        margin-right: 20px;
+        text-align: left;
+      }
+
+      .md1 {
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: #333333;
+      }
+
+      .md2 {
+        font-size: 10px;
+        color: #333333;
+        opacity: 70%;
+        font-weight: lighter;
+      }
+    }
+
+    .hotro-group {
+      color: #969495;
+      font-weight: 600;
+      text-align: right;
+      font-size: 14px;
+      @media (max-width:380px) {
+        .phone-number{
+          display: none;
+        }
+      }
+      @media (min-width:381px) {
+        .phone-number {
+          color: var(--mau-bc-16);
+          margin-top: 9px;
+          font-size: 12px;
+        }
+      }
+
+      .question-icon {
+        color: var(--mau-bc-16);
+        margin-right: 3px;
+      }
+    }
+  }
+}

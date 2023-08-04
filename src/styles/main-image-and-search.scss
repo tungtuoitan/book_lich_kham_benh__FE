@@ -1,0 +1,232 @@
+.main-image-group {
+  background-image: url("../../public/images/bookingcare-cover-4.jpg");
+  background-position: center center;
+
+
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (min-width:601px) {
+    background-size: cover;
+  }
+
+  @media (min-width:501px) and (max-width:600px) {
+    background-size: 1400px 787px;
+    background-position: calc(50% + 20px) top;
+  }
+
+  @media (min-width: 401px) and (max-width:500px) {
+    background-size: 1200px 675px;
+    background-position: calc(50% + 20px) top;
+  }
+
+  @media (max-width:400px) {
+    background-size: 1000px 562px;
+    background-position: calc(50% + 20px) top;
+  }
+
+
+  .white-opacity {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    z-index: 1;
+
+    @media (min-width:601px) {
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.2) 20%,
+          rgba(255, 255, 255, 1) 90%);
+
+    }
+
+    @media (min-width:501px) and (max-width:600px) {
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.2) 10%,
+          rgba(255, 255, 255, 1) 100%);
+
+    }
+
+    @media (min-width: 401px) and (max-width:500px) {
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.2) 10%,
+          rgba(255, 255, 255, 1) 80%);
+    }
+
+    @media (max-width:400px) {
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.2) 10%,
+          rgba(255, 255, 255, 1) 70%);
+    }
+
+
+  }
+
+  .search-group {
+    padding: 12px 0;
+    position: relative;
+    z-index: 2;
+
+    .h1 {
+      color: white;
+      text-shadow: 1px 1px 1px #333;
+      font-weight: 600;
+
+      @media (min-width:701px) {
+        font-size: 32px;
+        line-height: 47px;
+
+        .nen-tang-y-te {
+          font-weight: 350;
+        }
+      }
+
+      @media (min-width:551px) and (max-width:700px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      @media (min-width:401px) and (max-width:550px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @media(max-width:400px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .app-and-gg-play-group {
+      .google-play-icon {
+        height: 32px;
+        margin-right: 12px;
+      }
+
+      .app-store-icon {
+        height: 32px;
+      }
+    }
+
+    .search-box {
+      background-color: #f7d800;
+      margin: 0 auto 82px auto;
+      height: 50px;
+      width: 376px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width:500px) {
+        width: calc(100% - 50px)
+      }
+
+      .search-icon {
+        margin: 20px;
+      }
+
+      .o-search {
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        color: #333;
+        padding-right: 30px;
+      }
+
+      .o-search:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .ten-options {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+
+    .ten-options-li {
+      list-style-type: none;
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      height: 122px;
+
+      @media (min-width:1001px) {
+        width: 200px;
+      }
+
+      @media (min-width:751px) and (max-width:1000px) {
+        width: 150px;
+      }
+
+      @media (min-width:601px) and (max-width:750px) {
+        width: 120px;
+      }
+
+      @media (min-width:371px) and (max-width:600px) {
+        width: 120px;
+      }
+
+      @media (max-width:371px) {
+        width: 80px;
+      }
+
+
+      .container-icon-ten {
+        background-color: white;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      .icon-ten-options {
+        max-width: 30px;
+        max-height: 50px;
+      }
+    }
+
+    .ten-options-li>span {
+      margin-top: 10px;
+      font-weight: 550;
+
+      @media (min-width:901px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @media (max-width:900px) {
+        font-size: 12px;
+        line-height: 18px;
+
+      }
+    }
+  }
+
+  .ten-options>ul {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+    @media (min-width:601px) {
+      row-gap: 10px;
+
+    }
+
+    @media (max-width: 600px) {
+      row-gap: 0
+    }
+  }
+}

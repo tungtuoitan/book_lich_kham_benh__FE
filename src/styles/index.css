@@ -1,0 +1,32 @@
+#root{
+  --nen-xam: #f9f9f9;
+    --nen-trang: #fff;
+    --nen-am: #FCFAF6;
+    --mau-bc-16: #45c3d2;
+    --mau-sam: #333;
+    --mau-chu-dieuhuong: #fff;
+    --nen-dieuhuong: var(--mau-bc-16);
+    --chieucao-dieuhuong: 60px;
+    --mau-duongke: #eee;
+    --mau-cta: #FFC419;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat',
+    sans-serif;
+    font-size: 13px;
+    color:#444444;
+    line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding:0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  box-sizing: border-box;
+}
